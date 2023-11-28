@@ -1,0 +1,9 @@
+#Flatpak
+- ansible.builtin.include_role:
+  name: "Skype/in:/{{ install_source }}"
+  when: not install_source == "default"
+
+- name: OS specific
+  include_tasks: '{{ ansible_os_family }}/{{ ansible_distribution }}/main.yml'
+  when: install_source == "default"
+

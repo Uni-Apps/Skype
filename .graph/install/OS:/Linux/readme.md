@@ -1,0 +1,1 @@
+https://www.skype.com/en/get-skype/download-skype-for-desktop/
